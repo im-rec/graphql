@@ -1,6 +1,7 @@
 package hello
 
 import (
+	"github.com/rianekacahya/graphql/internal/v1/entity"
 	"github.com/rianekacahya/graphql/internal/v1/invoker/event"
 	"github.com/rianekacahya/graphql/internal/v1/invoker/grpc"
 	"github.com/rianekacahya/graphql/internal/v1/invoker/rest"
@@ -29,6 +30,8 @@ func Initialize() *hello {
 	}
 }
 
-type Usecase interface{}
+type Usecase interface{
+	GetHello() (*entity.Hello, error)
+}
 
 type Repository interface{}

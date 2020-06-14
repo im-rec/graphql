@@ -3,10 +3,7 @@ schema:
   - schema/hello_query.graphql
 
 exec:
-  filename: generated.go
-
-model:
-  filename: github.com/rianekacahya/graphql/internal/v1/module/hello/transport/graphql/model.go
+  filename: exec.go
 
 resolver:
   filename: resolver.go
