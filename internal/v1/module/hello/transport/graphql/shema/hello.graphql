@@ -1,0 +1,5 @@
+type Hello {
+    id: Int!
+    nama: String!
+    alamat: String!
+}
